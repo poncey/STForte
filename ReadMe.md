@@ -63,3 +63,26 @@ STForte is a pairwise graph autoencoding-based approach for SRT data analysis, w
 ## Tutorials
 
 You can find the STForte tutorials in the `tutorials` directory.
+
+## Experiment Codes/Notebooks
+
+The original experiment codes and Jupyter notebooks used in this work are stored [here](https://github.com/poncey/STForte_Experiments).
+
+## Citation 
+
+Currently, you can cite STForte through bioRxiv (DOI: [https://doi.org/10.1101/2024.08.16.608230](https://doi.org/10.1101/2024.08.16.608230)).
+
+```
+@article {2024.08.16.608230,
+	author = {Pang, Yuxuan and Wang, Chunxuan and Zhang, Yao-zhong and Wang, Zhuo and Imoto, Seiya and Lee, Tzong-Yi},
+	title = {Enhanced spatially resolved transcriptomics analysis by matching between expression profiles and spatial topology},
+	elocation-id = {2024.08.16.608230},
+	year = {2024},
+	doi = {10.1101/2024.08.16.608230},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2024/08/19/2024.08.16.608230},
+	eprint = {https://www.biorxiv.org/content/early/2024/08/19/2024.08.16.608230.full.pdf},
+	journal = {bioRxiv}
+}
+```
+
