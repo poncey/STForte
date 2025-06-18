@@ -1,9 +1,11 @@
-# STForte: enhanced spatially resolved transcriptomics analysis by matching between expression profiles and spatial topology
+# STForte: tissue context-specific encoding and consistency-aware spatial imputation for spatially resolved transcriptomics
 
-![Schematic plot](./assets/Schemetic.png)
+🔭 [Overview](#overview) | 🔧 [Installation](#installation) | 🔬 [Tutorials](#tutorials) | 📖 [Citation](#citation)
+
+
 
 ## Overview
-
+![Schematic plot](./assets/Schemetic.png)
 STForte is a pairwise graph autoencoding-based approach for SRT data analysis, which is capable of matching the information between expression profiles and spatial topology in the latent space. STForte benefits from the designed framework to provide encodings with justifiable spatial correlations for the downstream analysis of both homogeneous and heterogeneous SRT data. Moreover, STForte can unravel the biological patterns of unobserved locations or recover deficient measurements to enable spatial enhancement.
 
 ## Installation
@@ -62,7 +64,19 @@ STForte is a pairwise graph autoencoding-based approach for SRT data analysis, w
 
 ## Tutorials
 
-You can find the STForte tutorials in the `tutorials` directory.
+### Notebooks from the original experiments
+
+You can find the tutorials derived from the original experiments in the [`tutorials`](./tutorials) directory.
+
+### Colab Notebooks
+
+You can learn how to use STForte by following the Colab tutorial provided in our [APBJC 2024 tutorial](https://sites.google.com/view/apbjc2024-workshop-st-analysis):
+
+| Notebook | Link |
+|----------|------|
+| 🔬 Spatial domain identification and spatial enhancement on 10x Visium FFPE Mouse Kidney dataset | [![Colab](https://img.shields.io/badge/Open%20in-Colab-blue?logo=google-colab)](https://colab.research.google.com/drive/17PC4YX2M0Xt2BKvBrlyBENdHmtZgCPpL?usp=sharing) |
+| 🔬 Spatial domain identification and cell-cell communication on 10x Visium Human Breast Cancer Dataset using STForte $\times$ [COMMOT](https://commot.readthedocs.io/en/latest/) | [![Colab](https://img.shields.io/badge/Open%20in-Colab-blue?logo=google-colab)](https://colab.research.google.com/github/你的用户名/你的仓库/blob/main/eval.ipynb) |
+|🔬 Multi-slice spatial transcriptomics alignment Using [PASTE2](https://github.com/raphael-group/paste2) $\times$ STForte|[![Colab](https://img.shields.io/badge/Open%20in-Colab-blue?logo=google-colab)](https://colab.research.google.com/drive/10a6Atxmq6NAXtrK8s4k1xoaIf_FOkXLc?usp=sharing)|
 
 ## Experiment Codes/Notebooks
 
@@ -70,19 +84,19 @@ The original experiment codes and Jupyter notebooks used in this work are stored
 
 ## Citation 
 
-Currently, you can cite STForte through bioRxiv (DOI: [https://doi.org/10.1101/2024.08.16.608230](https://doi.org/10.1101/2024.08.16.608230)).
-
 ```
-@article {2024.08.16.608230,
-	author = {Pang, Yuxuan and Wang, Chunxuan and Zhang, Yao-zhong and Wang, Zhuo and Imoto, Seiya and Lee, Tzong-Yi},
-	title = {Enhanced spatially resolved transcriptomics analysis by matching between expression profiles and spatial topology},
-	elocation-id = {2024.08.16.608230},
-	year = {2024},
-	doi = {10.1101/2024.08.16.608230},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2024/08/19/2024.08.16.608230},
-	eprint = {https://www.biorxiv.org/content/early/2024/08/19/2024.08.16.608230.full.pdf},
-	journal = {bioRxiv}
+@article{10.1093/bib/bbaf174,
+    author = {Pang, Yuxuan and Wang, Chunxuan and Zhang, Yao-zhong and Wang, Zhuo and Imoto, Seiya and Lee, Tzong-Yi},
+    title = {STForte: tissue context-specific encoding and consistency-aware spatial imputation for spatially resolved transcriptomics},
+    journal = {Briefings in Bioinformatics},
+    volume = {26},
+    number = {2},
+    pages = {bbaf174},
+    year = {2025},
+    month = {04},
+    issn = {1477-4054},
+    doi = {10.1093/bib/bbaf174},
+    url = {https://doi.org/10.1093/bib/bbaf174},
 }
 ```
 

@@ -330,7 +330,7 @@ class STForteModule(pl.LightningModule):
             x : real expr. value (|V|, d)
 
         Returns:
-            attr_loss: NB neg-likelihood of node attributes.
+            attr_loss: reconstruction loss of node attributes.
         """
         loss = F.mse_loss(x, r)
         return loss
