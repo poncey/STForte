@@ -21,7 +21,11 @@ STForte is a pairwise graph autoencoding-based approach for SRT data analysis, w
   * Additional noticements:
     * Due to some basic gramma changes in the new version of scipy and pytorch-lightning, we suggest `scipy<=1.11.4` and `pytorch-lightning<=1.9.5`.
     * Installing the newest version of scanpy may raise conflicts caused by H5py, please degrade the version of H5py.  
-    * The .yaml conda env files are generated using conda of version 24.5.0. We suggest to align your conda version with us before directly build up env from `.yaml`.
+    * You can execute the following command with `conda` to install the prerequisite. The .yaml conda env files are generated using conda of version 24.5.0. We suggest to align your conda version with us before directly build up env from `.yaml`.
+      
+      ```
+      conda env create -f stforte_py311_torch222_cu121.yaml
+      ```
   * Example competible combination (Linux-64 + Python 3.11 + Pytorch 2.2.2 + CUDA 12.1)
 
     ```
